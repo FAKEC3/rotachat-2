@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <title>RotaChat 2.0 — Chat Social Brasileiro</title>
+  <meta name="description" content="RotaChat 2.0 — salas por cidades, comunidade, rádio e notícias.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><span class="logo">R</span><span>RotaChat</span></a>
+  <nav>
+    <a href="#salas">Salas</a>
+    <a href="#radio">Rádio</a>
+    <a href="#noticias">Notícias</a>
+  </nav>
+  <button class="login" id="loginBtn">Entrar</button>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">RotaChat 2.0</span>
+      <h1>Converse com pessoas da sua cidade.</h1>
+      <p>Um espaço brasileiro para conversar, conhecer gente, ouvir música e acompanhar o que acontece perto de você.</p>
+      <div class="actions">
+        <a class="primary" href="#salas">Entrar nas salas</a>
+        <a class="secondary" href="#radio">Ouvir Rota Musical</a>
+      </div>
+      <div class="stats">
+        <div><strong id="onlineCount">128</strong><span>online agora</span></div>
+        <div><strong>24h</strong><span>comunidade ativa</span></div>
+        <div><strong>100%</strong><span>brasileiro</span></div>
+      </div>
+    </div>
+    <div class="chat-preview">
+      <div class="preview-head"><span class="dot"></span><b>Sala Garanhuns</b><small>online</small></div>
+      <div class="msg"><span class="avatar">M</span><div><b>Marcos</b><p>Boa noite, pessoal! 👋</p></div></div>
+      <div class="msg"><span class="avatar">A</span><div><b>Ana</b><p>Quem está ouvindo a rádio?</p></div></div>
+      <div class="msg me"><div><b>Você</b><p>RotaChat voltou! 🚀</p></div><span class="avatar">R</span></div>
+      <div class="fake-input">Digite uma mensagem... <button>➤</button></div>
+    </div>
+  </section>
+
+  <section class="section" id="salas">
+    <div class="section-title"><div><span class="eyebrow">Perto de você</span><h2>Salas por cidades</h2></div><p>Escolha uma cidade para entrar na conversa.</p></div>
+    <div class="grid" id="cityGrid"></div>
+  </section>
+
+  <section class="split section" id="radio">
+    <div class="radio-card">
+      <span class="eyebrow">NO AR</span>
+      <h2>🎵 Rota Musical</h2>
+      <p>Música 24 horas para acompanhar suas conversas.</p>
+      <div class="player"><button id="playBtn">▶</button><div><b id="track">Rota Musical</b><small id="status">Player demonstrativo</small></div><div class="bars">▂▄▆▄▇</div></div>
+    </div>
+    <div class="news" id="noticias">
+      <span class="eyebrow">COMUNIDADE</span>
+      <h2>O que está acontecendo</h2>
+      <article><b>RotaChat 2.0 está nascendo</b><p>Uma nova versão, com estrutura independente e preparada para crescer.</p></article>
+      <article><b>Salas locais</b><p>Encontre pessoas da sua cidade e região em poucos cliques.</p></article>
+    </div>
+  </section>
+</main>
+
+<footer><b>RotaChat 2.0</b><span>Chat Social Brasileiro</span><small>© 2026 RotaChat</small></footer>
+
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <button class="close" id="closeModal">×</button>
+    <span class="eyebrow">EM BREVE</span>
+    <h2 id="modalTitle">RotaChat</h2>
+    <p id="modalText">Na próxima etapa vamos conectar login, banco de dados e mensagens em tempo real.</p>
+    <button class="primary modal-ok" id="okModal">Entendi</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
